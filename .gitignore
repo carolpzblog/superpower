@@ -1,0 +1,19 @@
+#include <iostream>
+
+ using namespace std;
+
+ int superpower (int a, int b){
+   int num=1 ;
+   for (int i=1;i<=b;i+=1){
+     num=num*a;
+   }
+  return num;
+ }
+
+ int main (){
+   int a,b;
+   cout<< "ESTE PROGRAMA MUESTRA UN NUMERO ELEVADO A UNA POTENCIA QUE EL USUARIO INDIQUE"<< endl << "inserte el numero base y a la potencia que desee elevar"<<endl;
+   cin>>a>>b;
+   cout << "el resultado de la potencia es: "<< superpower(a,b) << endl;
+   return 0;
+ }
